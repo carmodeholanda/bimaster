@@ -25,7 +25,7 @@ This project consists in the application of data mining and machine learning tec
 
 ### 1. Introdução
 
-Quando se fala de aquisição de bens industriais, existem uma infinidade de opções e tipos de bens que podem ser fornecidos pelos mais diversos mercados fornecedores. Inicialmente para a realização desse projeto, foram selecionadas [3 bases](https://github.com/fernandonahid/Projeto-Final/blob/main/1%20-%20BASES%20DE%20DADOS%20(CSV).zip) representativas de bens industriais com características típicas desse tipo de fornecimento, porém diferentes umas das outras. Essas bases representam de uma forma geral a grande maioria dos tipos de bens industriais:
+Quando se fala de aquisição de bens industriais, existem uma infinidade de opções e tipos de bens que podem ser fornecidos pelos mais diversos mercados fornecedores. Inicialmente para a realização desse projeto, foram selecionadas [3 bases](https://github.com/carmodeholanda/bimaster/blob/main/1%20-%20BASES%20DE%20DADOS%20(CSV).zip) representativas de bens industriais com características típicas desse tipo de fornecimento, porém diferentes umas das outras. Essas bases representam de uma forma geral a grande maioria dos tipos de bens industriais:
 
 - Base 1 – Base representativa de itens com características técnicas simples, normalmente associadas a dimensões, pesos, materiais comuns ao mercado fornecedor e sem muita complexidade na fabricação, que ocorre na maioria das vezes em série contínua. Essa base possui inicialmente 2921 itens com pelo menos 12 atributos de características técnicas no catálogo.
 - Base 2 – Base representativa de itens com características técnicas específicas, mas muitas vezes padronizadas. Esses itens são normalmente associados a bens operacionais, tais como equipamentos de pequeno porte, bens comuns a vários segmentos da indústria, entre outros. Possuem características técnicas similares entre fornecedores e sua fabricação se dá através de linha de produção ou categoria. Essa base possui inicialmente 8018 itens com pelo menos 21 atributos de características técnicas no catálogo.
@@ -39,7 +39,7 @@ As bases tratadas foram submetidas a diversos modelos de predição através do 
 
 #### 2.1. Etapa 1 - Pré-processamento e tratamento incial dos dados
 
-Para a [etapa 1](https://github.com/fernandonahid/Projeto-Final/blob/main/2%20-%20ETAPA%201%20-%20POWERBI.pbix) de tratamento dos dados, optou-se pela utilização do powerquery do Powerbi pela facilidade de utilização. Nessa etapa, todas as 3 bases receberam os seguintes tratamentos:
+Para a [etapa 1](https://github.com/carmodeholanda/bimaster/blob/main/2%20-%20ETAPA%201%20-%20POWERBI.pbix) de tratamento dos dados, optou-se pela utilização do powerquery do Powerbi pela facilidade de utilização. Nessa etapa, todas as 3 bases receberam os seguintes tratamentos:
 
 - Descaracterização e modificação de dados sensíveis;
 - Atualização dos preços para mesma data base;
@@ -52,7 +52,7 @@ Para a [etapa 1](https://github.com/fernandonahid/Projeto-Final/blob/main/2%20-%
 
 #### 2.2. Etapa 2 – Tratamento de missing values e análise de impacto de atributo no resultado (peso) 
 
-Para a [etapa 2](https://github.com/fernandonahid/Projeto-Final/blob/main/3%20-%20ETAPA%202%20-%20RAPIDMINER.zip) de tratamento dos dados, optou-se pela utilização do Rapdminer. Nessa etapa, todas as 3 bases receberam os seguintes tratamentos:
+Para a [etapa 2](https://github.com/carmodeholanda/bimaster/blob/main/3%20-%20ETAPA%202%20-%20RAPIDMINER.zip) de tratamento dos dados, optou-se pela utilização do Rapdminer. Nessa etapa, todas as 3 bases receberam os seguintes tratamentos:
 
 -	Exclusão de atributos com problemas ou irrelevantes para o modelo como, por exemplo, poucos dados preenchidos ou com um valor único;
 -	Tratamento de missing values através da exclusão de algumas linhas das bases, substituição por valores específicos ou por valores medianos (average);
@@ -74,7 +74,7 @@ Os resultados das análises de impacto dos atributos (peso) para as bases 1, 2 e
 
 #### 2.3. Etapa 3 – Redução de dimensionalidade, tratamento de outliers, balanceamento, transformações e ajustes adicionais
 
-Para a [etapa 3](https://github.com/fernandonahid/Projeto-Final/blob/main/4%20-%20ETAPA%203%20-%20RAPIDMINER.zip) de tratamento dos dados, optou-se pela utilização do Rapdminer. Nessa etapa, todas as 3 bases receberam os seguintes tratamentos:
+Para a [etapa 3](https://github.com/carmodeholanda/bimaster/blob/main/4%20-%20ETAPA%203%20-%20RAPIDMINER.zip) de tratamento dos dados, optou-se pela utilização do Rapdminer. Nessa etapa, todas as 3 bases receberam os seguintes tratamentos:
 
 -	Exclusão dos atributos de menor impacto na análise de peso da etapa anterior, conforme figuras 1, 2 e 3 (Redução de dimensionalidade);
 -	Remoção de outliers por "Outilier Distance" e "Univariate Outlier Detection". Optou-se por retirar os outliers da interseção entre outliers detectados por "Outlier Distance" com "Univariate Outlier Detection" de score maior que 1.5;
@@ -85,7 +85,7 @@ Para a [etapa 3](https://github.com/fernandonahid/Projeto-Final/blob/main/4%20-%
 
 #### 3.1. Modelos automatizados em Rapidminer
 
-Após todo tratamento efetuado nas etapas anteriores do estudo, optou-se por utilizar a ferramenta Rapidminer e seus operadores para análise preditiva. A resposta ao estudo dos melhores modelos para as bases de forma individualizada não foi satisfatória, pois a personalização necessária causou uma enorme dificuldade de comparação em cada base e entre as bases, causando muito impacto na capacidade conclusiva do estudo. Dessa forma, foram utilizados os [modelos automatizados](https://github.com/fernandonahid/Projeto-Final/blob/main/5%20-%20PREDI%C3%87%C3%83O%20-%20RAPIDMINER.zip.001) de análise da ferramenta Rapidminer. Essa escolha foi necessária pois, por se tratar de um estudo comparativo, o presente trabalho necessitava de padronização dos modelos.
+Após todo tratamento efetuado nas etapas anteriores do estudo, optou-se por utilizar a ferramenta Rapidminer e seus operadores para análise preditiva. A resposta ao estudo dos melhores modelos para as bases de forma individualizada não foi satisfatória, pois a personalização necessária causou uma enorme dificuldade de comparação em cada base e entre as bases, causando muito impacto na capacidade conclusiva do estudo. Dessa forma, foram utilizados os [modelos automatizados](https://github.com/carmodeholanda/bimaster/blob/main/5%20-%20PREDI%C3%87%C3%83O%20-%20RAPIDMINER%20001.zip) de análise da ferramenta Rapidminer. Essa escolha foi necessária pois, por se tratar de um estudo comparativo, o presente trabalho necessitava de padronização dos modelos.
 
 As figuras 4, 5 e 6 abaixo apresentam os resultados obtidos com diferentes operadores, em termos de acurácia, para cada uma das 3 bases. A acurácia foi avaliada através da divisão em classes, por frequência, em 5, 10 e 20 partes. Pode se perceber que a base 1 possui melhor resultado quando comparado com as demais, sendo a base 3 a de pior resultado.
 
@@ -109,7 +109,7 @@ Já a figura 7 na sequência, apresenta os resultados obtidos para o erro relati
 
 #### 3.2. Modelo de rede Neural em Python 
 
-Adicionalmente ao modelo utilizado em Rapidminer optou-se por avaliar as bases do estudo também, quanto a resposta preditiva, através de um [algoritmo de redes neurais](https://github.com/fernandonahid/Projeto-Final/blob/main/6%20-%20PREDI%C3%87%C3%83O%20-%20REDE%20NEURAL%20PHYTON.zip) em Python. Para melhor padronização e comparação, o modelo adotado, também procurou dividir as bases em 5, 10 e 20 classes. Foram utilizados modelos simplificados de redes neurais, com 2 camadas (incluindo output), com os neurônios normalmente associados a quantidade de variáveis disponíveis em cada base. O treinamento ocorreu através de 500 épocas e em 80% das amostras, sendo os outros 20%, separados para teste.
+Adicionalmente ao modelo utilizado em Rapidminer optou-se por avaliar as bases do estudo também, quanto a resposta preditiva, através de um [algoritmo de redes neurais](https://github.com/carmodeholanda/bimaster/blob/main/6%20-%20PREDI%C3%87%C3%83O%20-%20REDE%20NEURAL%20PHYTON.zip) em Python. Para melhor padronização e comparação, o modelo adotado, também procurou dividir as bases em 5, 10 e 20 classes. Foram utilizados modelos simplificados de redes neurais, com 2 camadas (incluindo output), com os neurônios normalmente associados a quantidade de variáveis disponíveis em cada base. O treinamento ocorreu através de 500 épocas e em 80% das amostras, sendo os outros 20%, separados para teste.
 
 A figura 8 apresenta os resultados obtidos para o modelo de rede neural adotado:
 
@@ -119,7 +119,7 @@ A figura 8 apresenta os resultados obtidos para o modelo de rede neural adotado:
 
 #### 3.3. Modelo de regressão em Python 
 
-Por fim, um [arquivo Python](https://github.com/fernandonahid/Projeto-Final/blob/main/7%20-%20PREDI%C3%87%C3%83O%20-%20REGRESS%C3%83O%20PHYTON.zip) com diferentes modelos de regressão foi adotado para avaliar a resposta da predição para cada base. Em geral os modelos foram avaliados por regressão linear múltipla e otimizados através da retirada de variáveis não relevantes, ou seja, sem impacto nos resultados.
+Por fim, um [arquivo Python](https://github.com/carmodeholanda/bimaster/blob/main/7%20-%20PREDI%C3%87%C3%83O%20-%20REGRESS%C3%83O%20PHYTON.zip) com diferentes modelos de regressão foi adotado para avaliar a resposta da predição para cada base. Em geral os modelos foram avaliados por regressão linear múltipla e otimizados através da retirada de variáveis não relevantes, ou seja, sem impacto nos resultados.
 
 Posteriormente também foi feita a análise considerando modelos de regressão polinomial múltipla. A figura 9 apresenta os resultados de R2 ajustado obtidos para os modelos de regressão. Importante ressaltar que a figura 9 apenas ilustra os resultados obtidos, sem críticas e análises mais profundas aos resultados obtidos, que serão feitas nas conclusões (optou-se por colocar na figura 9 apenas o resultado da regressão polinomial de 3º grau).
 
